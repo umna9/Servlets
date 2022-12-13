@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <!-- For task 1-->  
+   
+   <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>one.DemoOne</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/page1</url-pattern>
+    </servlet-mapping>        
+    
+
+    <!-- For task 2-->
+    <servlet>
+        <servlet-name>SecondServlet</servlet-name>
+        <servlet-class>two.DemoTwo</servlet-class>
+        <init-param> 
+            <param-name>name</param-name>
+            <param-value>Yomna</param-value>
+        </init-param>
+        
+        <init-param> 
+            <param-name>age</param-name>
+            <param-value>23</param-value>
+        </init-param>
+    </servlet>
+    
+    
+    
+    <servlet-mapping>
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/page2</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- task 3 -->            
+                            
+      <servlet>
+        <servlet-name>ThirdServlet</servlet-name>
+        <servlet-class>three.DemoThree</servlet-class>
+        
+    </servlet>
+    
+    <servlet-mapping>
+         <servlet-name>ThirdServlet</servlet-name>
+         <url-pattern>/page3</url-pattern>
+    </servlet-mapping>                                                   
+    
+</web-app>
